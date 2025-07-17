@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TasteFusion Restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf4;
+      color: #333;
+    }
+    header {
+      background-color: #b22222;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #b22222;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1551183053-bf91a1d81141');
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 2rem;
+      color: white;
+      text-align: center;
+    }
+    .menu, .about, .contact {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .menu h2, .about h2, .contact h2 {
+      color: #b22222;
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .menu-item {
+      background: #fefefe;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .contact button {
+      background-color: #b22222;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #a11c1c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TasteFusion Restaurant</h1>
+    <p>Classic Ethiopian & International Flavors</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Experience a World of Taste</h2>
+    <p>From Injera to Burgers – We've got it all!</p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item"><h3>Doro Wat</h3><p>Spicy Ethiopian chicken stew</p></div>
+      <div class="menu-item"><h3>Injera & Shiro</h3><p>Traditional lentil stew with flatbread</p></div>
+      <div class="menu-item"><h3>Tibs</h3><p>Sautéed meat with veggies</p></div>
+      <div class="menu-item"><h3>Cheeseburger</h3><p>Grilled beef patty with cheese</p></div>
+      <div class="menu-item"><h3>Pizza Margherita</h3><p>Classic tomato and cheese pizza</p></div>
+      <div class="menu-item"><h3>Spaghetti</h3><p>Italian-style pasta with tomato sauce</p></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to TasteFusion, where traditional Ethiopian cuisine meets the world's favorite dishes. We aim to serve you flavor, warmth, and hospitality in every bite.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Want to book a table or order online? Reach out to us now!</p>
+    <button onclick="window.location.href='https://wa.me/251912345678'">Message Us on WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TasteFusion Restaurant. All rights reserved.</p>
+  </footer>
+</body>
+</html>
